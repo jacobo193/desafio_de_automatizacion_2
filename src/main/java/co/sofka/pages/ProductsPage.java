@@ -50,7 +50,7 @@ public class ProductsPage {
         burgerMenu.click();
     }
 
-    public void LogOutButton(){logOutButton.click();
+    public void LogOutButton(){ logOutButton.click();
 
     }
 
