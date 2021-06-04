@@ -50,6 +50,10 @@ public class LoginPage {
         return loginErrorMessage.getText();
     }
 
+    public String loginButtonText(){
+        return loginButton.getText();
+    }
+
 }
 
 

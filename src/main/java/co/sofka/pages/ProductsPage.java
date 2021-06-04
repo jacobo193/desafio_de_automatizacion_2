@@ -27,6 +27,12 @@ public class ProductsPage {
     @FindBy(id = "shopping_cart_container")
     WebElement cartBadgebutton;
 
+    @FindBy(id="react-burger-menu-btn")
+    WebElement burgerMenu;
+
+    @FindBy(id="logout_sidebar_link")
+    WebElement logOutButton;
+
     public ProductsPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
@@ -38,6 +44,14 @@ public class ProductsPage {
 
     public void AddtoCart(){
         AddToCartButton.click();
+    }
+
+    public void burgerMenu(){
+        burgerMenu.click();
+    }
+
+    public void LogOutButton(){logOutButton.click();
+
     }
 
     public YourCartPage cartBadgebutton(){
