@@ -14,6 +14,7 @@ import org.openqa.selenium.WebDriver;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class LogOut {
@@ -41,7 +42,7 @@ public class LogOut {
     }
     @Then(": I return to Login Page")
     public void i_return_to_login_page() {
-       assertEquals(logOutController.getLoginText(),"");
+      assertThat(logOutController.getLoginText(), true);
         driver.quit();
     }
 }
